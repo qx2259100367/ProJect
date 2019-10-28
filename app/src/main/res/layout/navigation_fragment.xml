@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+     <q.rorbin.verticaltablayout.VerticalTabLayout
+         android:layout_width="100dp"
+         android:layout_height="0dp"
+         android:orientation="vertical"
+         android:background="#E6E6E6"
+         android:visibility="visible"
+         app:indicator_color="#FFFFFF"
+         app:tab_mode="scrollable"
+         app:indicator_gravity="fill"
+         app:tab_height="50dp"
+         android:id="@+id/navigation_tab"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:tabMode="scrollable"
+         />
+     <android.support.v7.widget.RecyclerView
+         android:layout_width="0dp"
+         android:layout_height="0dp"
+         android:id="@+id/navigation_recy"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toEndOf="@+id/navigation_tab"
+         app:layout_constraintTop_toTopOf="parent"
+         />
+</android.support.constraint.ConstraintLayout>

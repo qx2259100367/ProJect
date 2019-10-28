@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="7dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/know_name"
+            android:textStyle="bold"
+            android:textSize="15sp"
+             android:text="@string/app_name"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/know_titie"
+            android:text="@string/app_name"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/know_name"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/know_arrow"
+            android:id="@+id/know_iv"
+            android:layout_toRightOf="@id/know_name"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="270dp"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
